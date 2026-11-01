@@ -1,0 +1,613 @@
+{
+  "rfp_run_id": "4f2eefa3-086f-4856-9336-5f74b87fe6f2",
+  "created_at": "2026-10-31T07:59:38.096248+00:00",
+  "status": "completed",
+  "mode": "Demo",
+  "model": "fixed synthetic fixtures",
+  "criteria_snapshot": [
+    {
+      "criterion_id": 1,
+      "name": "Technical Capability",
+      "description": "Architecture, integrations, scalability and technical fit",
+      "weight": 30.0,
+      "max_score": 10.0,
+      "is_active": 1
+    },
+    {
+      "criterion_id": 2,
+      "name": "Implementation Plan",
+      "description": "Timeline, milestones, staffing and risk plan",
+      "weight": 20.0,
+      "max_score": 10.0,
+      "is_active": 1
+    },
+    {
+      "criterion_id": 3,
+      "name": "Commercial Value",
+      "description": "Pricing clarity, total cost and assumptions",
+      "weight": 20.0,
+      "max_score": 10.0,
+      "is_active": 1
+    },
+    {
+      "criterion_id": 4,
+      "name": "Security & Compliance",
+      "description": "Controls, certifications, privacy and auditability",
+      "weight": 20.0,
+      "max_score": 10.0,
+      "is_active": 1
+    },
+    {
+      "criterion_id": 5,
+      "name": "Support & Experience",
+      "description": "Support model, similar projects and references",
+      "weight": 10.0,
+      "max_score": 10.0,
+      "is_active": 1
+    }
+  ],
+  "suppliers": [
+    {
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "name": "Technical Capability",
+          "description": "Architecture, integrations, scalability and technical fit",
+          "weight": 30.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 8.0,
+          "evidence": "The solution uses documented REST adapters, a staging environment and automated contract tests. Capacity planning targets 1,000 concurrent users; larger workloads require a separate sizing exercise.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated technical capability strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative_percent": 88.88888888888889
+        },
+        {
+          "criterion_id": 2,
+          "name": "Implementation Plan",
+          "description": "Timeline, milestones, staffing and risk plan",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 9.0,
+          "evidence": "A 12-week plan defines discovery, prototype, integration, migration rehearsal and acceptance gates. A RACI assigns a delivery manager, integration lead, three engineers and a QA lead. A two-week risk reserve and weekly risk register reviews are included.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated implementation plan strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_percent": 100.0
+        },
+        {
+          "criterion_id": 3,
+          "name": "Commercial Value",
+          "description": "Pricing clarity, total cost and assumptions",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 8.0,
+          "evidence": "NexaWorks proposes delivery in 12 weeks at a fixed implementation price of INR 18,50,000.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated commercial value strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative_percent": 88.88888888888889
+        },
+        {
+          "criterion_id": 4,
+          "name": "Security & Compliance",
+          "description": "Controls, certifications, privacy and auditability",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 8.0,
+          "evidence": "SSO, least-privilege roles, encrypted backups and immutable audit logs are included. Recovery targets are RPO 24 hours and RTO 8 hours. Annual penetration testing is planned; no completed certification is claimed.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated security & compliance strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": -1.0,
+          "relative_percent": 88.88888888888889
+        },
+        {
+          "criterion_id": 5,
+          "name": "Support & Experience",
+          "description": "Support model, similar projects and references",
+          "weight": 10.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 9.0,
+          "evidence": "24x7 incident intake provides a 1-hour critical response and named escalation owner. Three fictional comparable projects include reference contacts, transition training and monthly service reviews.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated support & experience strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_percent": 100.0
+        }
+      ],
+      "warnings": [],
+      "risks": [
+        "Fictional claims; not independently verified.",
+        "Cloud usage and post-year-one support add uncertain cost."
+      ],
+      "overall_summary": "Fixed classroom demonstration scorecard for NexaWorks; not generated by an LLM.",
+      "supplier_name": "NexaWorks",
+      "submission_date": "2026-10-22",
+      "experience_rating": 8,
+      "document_sha256": "7d48dd52c0d3669b141c40a92fe8e5d82ce90a40e82a8a4a637ee8f01b34e1bf",
+      "extracted_text": "[Page 1]\nNexaWorks | Synthetic RFP response\nPage 1\n NexaWorks\nFictional supplier proposal | RFP-2026-PORTAL\nSYNTHETIC CLASSROOM DATA - All organizations, projects, contacts and claims in this proposal are invented.\n1. Executive summary and requirement\nThe buyer seeks a cloud supplier-onboarding and procurement portal for 500 staff. The common scope is\napproval workflows, ERP connectivity, SSO, reporting, data migration and administrator training. Each bidder\nmust describe capacity, delivery, total costs and operational support.\nNexaWorks proposes delivery in 12 weeks at a fixed implementation price of INR 18,50,000. The following\nsections state our offered scope and limitations.\n2. Proposed solution\nThe solution uses documented REST adapters, a staging environment and automated contract tests. Capacity\nplanning targets 1,000 concurrent users; larger workloads require a separate sizing exercise.\nThe base scope covers supplier registration, approval routing, purchase-request tracking and a reporting\ndashboard. Buyer staff supply clean master data and approve requirements. New third-party licensing is\nexcluded unless explicitly priced.\n\n\n[Page 2]\nNexaWorks | Synthetic RFP response\nPage 2\n3. Delivery, team and milestones\nA 12-week plan defines discovery, prototype, integration, migration rehearsal and acceptance gates. A RACI\nassigns a delivery manager, integration lead, three engineers and a QA lead. A two-week risk reserve and\nweekly risk register reviews are included.\nThe buyer must provide an ERP sandbox, an identity-provider test account and a product owner. Scope changes\nrequire a written estimate and approval. Acceptance requires successful user journeys and resolution of critical\ndefects.\n4. Commercial proposal\nItem\nOffer\nImplementation (fixed)\nINR 18,50,000\nDelivery schedule\n12 weeks\nFirst-year support\nIncluded in fixed price\nTax\nGST excluded\nCloud hosting\nBuyer account; usage billed separately\nPayment milestones\n30% kickoff / 40% build / 30% acceptance\nAssumptions: one ERP instance, English interface and one data migration are included. Travel, custom mobile\napps and ongoing cloud consumption are excluded. Renewal pricing after year one is subject to a new quote; this\nis a total-cost uncertainty.\n\n\n[Page 3]\nNexaWorks | Synthetic RFP response\nPage 3\n5. Security, compliance and risk\nSSO, least-privilege roles, encrypted backups and immutable audit logs are included. Recovery targets are RPO\n24 hours and RTO 8 hours. Annual penetration testing is planned; no completed certification is claimed.\nAll claims are illustrative. The buyer should validate security evidence before any real procurement. Key shared\nrisks include delayed sandbox access, poor source data and unapproved scope changes. The supplier will\nrecord issues and escalate unresolved dependencies to the buyer sponsor.\n6. Support, experience and references\n24x7 incident intake provides a 1-hour critical response and named escalation owner. Three fictional comparable\nprojects include reference contacts, transition training and monthly service reviews.\nFictional reference directory: Cedar Training Cooperative, Mira Shah, reference@cedar.example; Blue Lake\nServices, Arun Das, reference@bluelake.example. These are invented classroom contacts and must not be\ncontacted. Reference availability and comparability should be assessed from the stated project history.\n7. Scope boundaries and confirmation\nThis document is a teaching artifact and is not a contractual offer. Unsupported items should receive\nconservative evaluation. The evaluation must use only this proposal and the active rubric; no external reputation\nor unstated capabilities should be assumed.\n",
+      "raw_model_output": {
+        "supplier_name": "NexaWorks",
+        "criteria": [
+          {
+            "criterion_id": 1,
+            "score": 8,
+            "max_score": 10,
+            "evidence": "The solution uses documented REST adapters, a staging environment and automated contract tests. Capacity planning targets 1,000 concurrent users; larger workloads require a separate sizing exercise.",
+            "justification": "Illustrative score based on the stated technical capability strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 2,
+            "score": 9,
+            "max_score": 10,
+            "evidence": "A 12-week plan defines discovery, prototype, integration, migration rehearsal and acceptance gates. A RACI assigns a delivery manager, integration lead, three engineers and a QA lead. A two-week risk reserve and weekly risk register reviews are included.",
+            "justification": "Illustrative score based on the stated implementation plan strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 3,
+            "score": 8,
+            "max_score": 10,
+            "evidence": "NexaWorks proposes delivery in 12 weeks at a fixed implementation price of INR 18,50,000.",
+            "justification": "Illustrative score based on the stated commercial value strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 4,
+            "score": 8,
+            "max_score": 10,
+            "evidence": "SSO, least-privilege roles, encrypted backups and immutable audit logs are included. Recovery targets are RPO 24 hours and RTO 8 hours. Annual penetration testing is planned; no completed certification is claimed.",
+            "justification": "Illustrative score based on the stated security & compliance strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 5,
+            "score": 9,
+            "max_score": 10,
+            "evidence": "24x7 incident intake provides a 1-hour critical response and named escalation owner. Three fictional comparable projects include reference contacts, transition training and monthly service reviews.",
+            "justification": "Illustrative score based on the stated support & experience strengths and limitations. Review the quoted evidence."
+          }
+        ],
+        "risks": [
+          "Fictional claims; not independently verified.",
+          "Cloud usage and post-year-one support add uncertain cost."
+        ],
+        "overall_summary": "Fixed classroom demonstration scorecard for NexaWorks; not generated by an LLM."
+      },
+      "absolute_score": 83.0,
+      "ppi": 92.22222222222223,
+      "final_rank": 1,
+      "rank_reason": "Highest PPI in this batch."
+    },
+    {
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "name": "Technical Capability",
+          "description": "Architecture, integrations, scalability and technical fit",
+          "weight": 30.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 9.0,
+          "evidence": "Modular services expose versioned REST APIs with retry queues and idempotent ERP synchronization. Load tests target 2,000 concurrent users.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated technical capability strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_percent": 100.0
+        },
+        {
+          "criterion_id": 2,
+          "name": "Implementation Plan",
+          "description": "Timeline, milestones, staffing and risk plan",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 7.0,
+          "evidence": "Delivery includes discovery in weeks 1-3, integration in weeks 4-10 and acceptance in weeks 11-16. A project manager and four engineers are assigned; client data availability may delay integration.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated implementation plan strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": -2.0,
+          "relative_percent": 77.77777777777777
+        },
+        {
+          "criterion_id": 3,
+          "name": "Commercial Value",
+          "description": "Pricing clarity, total cost and assumptions",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 6.0,
+          "evidence": "Apex Systems proposes delivery in 16 weeks at a fixed implementation price of INR 24,00,000.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated commercial value strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": -3.0,
+          "relative_percent": 66.66666666666667
+        },
+        {
+          "criterion_id": 4,
+          "name": "Security & Compliance",
+          "description": "Controls, certifications, privacy and auditability",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 9.0,
+          "evidence": "Encryption uses TLS 1.3 in transit and AES-256 at rest. Role-based access, SSO, audit logs, daily backups and quarterly access reviews are included. Certification evidence is a fictional audit summary, not an independent certificate.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated security & compliance strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_percent": 100.0
+        },
+        {
+          "criterion_id": 5,
+          "name": "Support & Experience",
+          "description": "Support model, similar projects and references",
+          "weight": 10.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 7.0,
+          "evidence": "Business-hours support with a 2-hour critical response and 99.5% monthly availability target is included. Two fictional reference projects are listed; after-hours support costs extra.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated support & experience strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": -2.0,
+          "relative_percent": 77.77777777777777
+        }
+      ],
+      "warnings": [],
+      "risks": [
+        "Fictional claims; not independently verified.",
+        "Cloud usage and post-year-one support add uncertain cost."
+      ],
+      "overall_summary": "Fixed classroom demonstration scorecard for Apex Systems; not generated by an LLM.",
+      "supplier_name": "Apex Systems",
+      "submission_date": "2026-10-20",
+      "experience_rating": 7,
+      "document_sha256": "8bc6e18d66e91ed503b209dacd0e9fee2805fe219105339d2b483e63cbcecf34",
+      "extracted_text": "[Page 1]\nApex Systems | Synthetic RFP response\nPage 1\n Apex Systems\nFictional supplier proposal | RFP-2026-PORTAL\nSYNTHETIC CLASSROOM DATA - All organizations, projects, contacts and claims in this proposal are invented.\n1. Executive summary and requirement\nThe buyer seeks a cloud supplier-onboarding and procurement portal for 500 staff. The common scope is\napproval workflows, ERP connectivity, SSO, reporting, data migration and administrator training. Each bidder\nmust describe capacity, delivery, total costs and operational support.\nApex Systems proposes delivery in 16 weeks at a fixed implementation price of INR 24,00,000. The following\nsections state our offered scope and limitations.\n2. Proposed solution\nModular services expose versioned REST APIs with retry queues and idempotent ERP synchronization. Load\ntests target 2,000 concurrent users.\nThe base scope covers supplier registration, approval routing, purchase-request tracking and a reporting\ndashboard. Buyer staff supply clean master data and approve requirements. New third-party licensing is\nexcluded unless explicitly priced.\n\n\n[Page 2]\nApex Systems | Synthetic RFP response\nPage 2\n3. Delivery, team and milestones\nDelivery includes discovery in weeks 1-3, integration in weeks 4-10 and acceptance in weeks 11-16. A project\nmanager and four engineers are assigned; client data availability may delay integration.\nThe buyer must provide an ERP sandbox, an identity-provider test account and a product owner. Scope changes\nrequire a written estimate and approval. Acceptance requires successful user journeys and resolution of critical\ndefects.\n4. Commercial proposal\nItem\nOffer\nImplementation (fixed)\nINR 24,00,000\nDelivery schedule\n16 weeks\nFirst-year support\nIncluded in fixed price\nTax\nGST excluded\nCloud hosting\nBuyer account; usage billed separately\nPayment milestones\n30% kickoff / 40% build / 30% acceptance\nAssumptions: one ERP instance, English interface and one data migration are included. Travel, custom mobile\napps and ongoing cloud consumption are excluded. Renewal pricing after year one is subject to a new quote; this\nis a total-cost uncertainty.\n\n\n[Page 3]\nApex Systems | Synthetic RFP response\nPage 3\n5. Security, compliance and risk\nEncryption uses TLS 1.3 in transit and AES-256 at rest. Role-based access, SSO, audit logs, daily backups and\nquarterly access reviews are included. Certification evidence is a fictional audit summary, not an independent\ncertificate.\nAll claims are illustrative. The buyer should validate security evidence before any real procurement. Key shared\nrisks include delayed sandbox access, poor source data and unapproved scope changes. The supplier will\nrecord issues and escalate unresolved dependencies to the buyer sponsor.\n6. Support, experience and references\nBusiness-hours support with a 2-hour critical response and 99.5% monthly availability target is included. Two\nfictional reference projects are listed; after-hours support costs extra.\nFictional reference directory: Cedar Training Cooperative, Mira Shah, reference@cedar.example; Blue Lake\nServices, Arun Das, reference@bluelake.example. These are invented classroom contacts and must not be\ncontacted. Reference availability and comparability should be assessed from the stated project history.\n7. Scope boundaries and confirmation\nThis document is a teaching artifact and is not a contractual offer. Unsupported items should receive\nconservative evaluation. The evaluation must use only this proposal and the active rubric; no external reputation\nor unstated capabilities should be assumed.\n",
+      "raw_model_output": {
+        "supplier_name": "Apex Systems",
+        "criteria": [
+          {
+            "criterion_id": 1,
+            "score": 9,
+            "max_score": 10,
+            "evidence": "Modular services expose versioned REST APIs with retry queues and idempotent ERP synchronization. Load tests target 2,000 concurrent users.",
+            "justification": "Illustrative score based on the stated technical capability strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 2,
+            "score": 7,
+            "max_score": 10,
+            "evidence": "Delivery includes discovery in weeks 1-3, integration in weeks 4-10 and acceptance in weeks 11-16. A project manager and four engineers are assigned; client data availability may delay integration.",
+            "justification": "Illustrative score based on the stated implementation plan strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 3,
+            "score": 6,
+            "max_score": 10,
+            "evidence": "Apex Systems proposes delivery in 16 weeks at a fixed implementation price of INR 24,00,000.",
+            "justification": "Illustrative score based on the stated commercial value strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 4,
+            "score": 9,
+            "max_score": 10,
+            "evidence": "Encryption uses TLS 1.3 in transit and AES-256 at rest. Role-based access, SSO, audit logs, daily backups and quarterly access reviews are included. Certification evidence is a fictional audit summary, not an independent certificate.",
+            "justification": "Illustrative score based on the stated security & compliance strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 5,
+            "score": 7,
+            "max_score": 10,
+            "evidence": "Business-hours support with a 2-hour critical response and 99.5% monthly availability target is included. Two fictional reference projects are listed; after-hours support costs extra.",
+            "justification": "Illustrative score based on the stated support & experience strengths and limitations. Review the quoted evidence."
+          }
+        ],
+        "risks": [
+          "Fictional claims; not independently verified.",
+          "Cloud usage and post-year-one support add uncertain cost."
+        ],
+        "overall_summary": "Fixed classroom demonstration scorecard for Apex Systems; not generated by an LLM."
+      },
+      "absolute_score": 78.0,
+      "ppi": 86.66666666666666,
+      "final_rank": 2,
+      "rank_reason": "Placed after NexaWorks: lower PPI."
+    },
+    {
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "name": "Technical Capability",
+          "description": "Architecture, integrations, scalability and technical fit",
+          "weight": 30.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 5.0,
+          "evidence": "The portal architecture is described at a high level. ERP integration will be finalized during discovery; API contracts, retry behavior and performance targets are not provided.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated technical capability strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": -4.0,
+          "relative_percent": 55.55555555555556
+        },
+        {
+          "criterion_id": 2,
+          "name": "Implementation Plan",
+          "description": "Timeline, milestones, staffing and risk plan",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 7.0,
+          "evidence": "Delivery takes 14 weeks with discovery, build and user acceptance phases. A senior project manager, two engineers and a part-time tester are assigned. Dependencies are tracked monthly, but detailed acceptance gates are absent.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated implementation plan strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": -2.0,
+          "relative_percent": 77.77777777777777
+        },
+        {
+          "criterion_id": 3,
+          "name": "Commercial Value",
+          "description": "Pricing clarity, total cost and assumptions",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 7.0,
+          "evidence": "Orbit Digital proposes delivery in 14 weeks at a fixed implementation price of INR 17,00,000.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated commercial value strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": -2.0,
+          "relative_percent": 77.77777777777777
+        },
+        {
+          "criterion_id": 4,
+          "name": "Security & Compliance",
+          "description": "Controls, certifications, privacy and auditability",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 7.0,
+          "evidence": "Role-based access, TLS encryption, daily backups and audit trails are proposed. A security lead reviews releases; retention periods and recovery-time commitments remain to be agreed.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated security & compliance strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": -2.0,
+          "relative_percent": 77.77777777777777
+        },
+        {
+          "criterion_id": 5,
+          "name": "Support & Experience",
+          "description": "Support model, similar projects and references",
+          "weight": 10.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 9.0,
+          "evidence": "The team reports eight fictional comparable deployments over six years. Three fictional client references and a named service manager are provided. A 2-hour critical response and quarterly service reviews are included.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated support & experience strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_percent": 100.0
+        }
+      ],
+      "warnings": [],
+      "risks": [
+        "Fictional claims; not independently verified.",
+        "Cloud usage and post-year-one support add uncertain cost."
+      ],
+      "overall_summary": "Fixed classroom demonstration scorecard for Orbit Digital; not generated by an LLM.",
+      "supplier_name": "Orbit Digital",
+      "submission_date": "2026-10-23",
+      "experience_rating": 9,
+      "document_sha256": "6edcd0219272f8a9cd7c0f80d0261334bca7f591abf796d002ce5bb90536f0cb",
+      "extracted_text": "[Page 1]\nOrbit Digital | Synthetic RFP response\nPage 1\n Orbit Digital\nFictional supplier proposal | RFP-2026-PORTAL\nSYNTHETIC CLASSROOM DATA - All organizations, projects, contacts and claims in this proposal are invented.\n1. Executive summary and requirement\nThe buyer seeks a cloud supplier-onboarding and procurement portal for 500 staff. The common scope is\napproval workflows, ERP connectivity, SSO, reporting, data migration and administrator training. Each bidder\nmust describe capacity, delivery, total costs and operational support.\nOrbit Digital proposes delivery in 14 weeks at a fixed implementation price of INR 17,00,000. The following\nsections state our offered scope and limitations.\n2. Proposed solution\nThe portal architecture is described at a high level. ERP integration will be finalized during discovery; API\ncontracts, retry behavior and performance targets are not provided.\nThe base scope covers supplier registration, approval routing, purchase-request tracking and a reporting\ndashboard. Buyer staff supply clean master data and approve requirements. New third-party licensing is\nexcluded unless explicitly priced.\n\n\n[Page 2]\nOrbit Digital | Synthetic RFP response\nPage 2\n3. Delivery, team and milestones\nDelivery takes 14 weeks with discovery, build and user acceptance phases. A senior project manager, two\nengineers and a part-time tester are assigned. Dependencies are tracked monthly, but detailed acceptance gates\nare absent.\nThe buyer must provide an ERP sandbox, an identity-provider test account and a product owner. Scope changes\nrequire a written estimate and approval. Acceptance requires successful user journeys and resolution of critical\ndefects.\n4. Commercial proposal\nItem\nOffer\nImplementation (fixed)\nINR 17,00,000\nDelivery schedule\n14 weeks\nFirst-year support\nIncluded in fixed price\nTax\nGST excluded\nCloud hosting\nBuyer account; usage billed separately\nPayment milestones\n30% kickoff / 40% build / 30% acceptance\nAssumptions: one ERP instance, English interface and one data migration are included. Travel, custom mobile\napps and ongoing cloud consumption are excluded. Renewal pricing after year one is subject to a new quote; this\nis a total-cost uncertainty.\n\n\n[Page 3]\nOrbit Digital | Synthetic RFP response\nPage 3\n5. Security, compliance and risk\nRole-based access, TLS encryption, daily backups and audit trails are proposed. A security lead reviews\nreleases; retention periods and recovery-time commitments remain to be agreed.\nAll claims are illustrative. The buyer should validate security evidence before any real procurement. Key shared\nrisks include delayed sandbox access, poor source data and unapproved scope changes. The supplier will\nrecord issues and escalate unresolved dependencies to the buyer sponsor.\n6. Support, experience and references\nThe team reports eight fictional comparable deployments over six years. Three fictional client references and a\nnamed service manager are provided. A 2-hour critical response and quarterly service reviews are included.\nFictional reference directory: Cedar Training Cooperative, Mira Shah, reference@cedar.example; Blue Lake\nServices, Arun Das, reference@bluelake.example. These are invented classroom contacts and must not be\ncontacted. Reference availability and comparability should be assessed from the stated project history.\n7. Scope boundaries and confirmation\nThis document is a teaching artifact and is not a contractual offer. Unsupported items should receive\nconservative evaluation. The evaluation must use only this proposal and the active rubric; no external reputation\nor unstated capabilities should be assumed.\n",
+      "raw_model_output": {
+        "supplier_name": "Orbit Digital",
+        "criteria": [
+          {
+            "criterion_id": 1,
+            "score": 5,
+            "max_score": 10,
+            "evidence": "The portal architecture is described at a high level. ERP integration will be finalized during discovery; API contracts, retry behavior and performance targets are not provided.",
+            "justification": "Illustrative score based on the stated technical capability strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 2,
+            "score": 7,
+            "max_score": 10,
+            "evidence": "Delivery takes 14 weeks with discovery, build and user acceptance phases. A senior project manager, two engineers and a part-time tester are assigned. Dependencies are tracked monthly, but detailed acceptance gates are absent.",
+            "justification": "Illustrative score based on the stated implementation plan strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 3,
+            "score": 7,
+            "max_score": 10,
+            "evidence": "Orbit Digital proposes delivery in 14 weeks at a fixed implementation price of INR 17,00,000.",
+            "justification": "Illustrative score based on the stated commercial value strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 4,
+            "score": 7,
+            "max_score": 10,
+            "evidence": "Role-based access, TLS encryption, daily backups and audit trails are proposed. A security lead reviews releases; retention periods and recovery-time commitments remain to be agreed.",
+            "justification": "Illustrative score based on the stated security & compliance strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 5,
+            "score": 9,
+            "max_score": 10,
+            "evidence": "The team reports eight fictional comparable deployments over six years. Three fictional client references and a named service manager are provided. A 2-hour critical response and quarterly service reviews are included.",
+            "justification": "Illustrative score based on the stated support & experience strengths and limitations. Review the quoted evidence."
+          }
+        ],
+        "risks": [
+          "Fictional claims; not independently verified.",
+          "Cloud usage and post-year-one support add uncertain cost."
+        ],
+        "overall_summary": "Fixed classroom demonstration scorecard for Orbit Digital; not generated by an LLM."
+      },
+      "absolute_score": 66.0,
+      "ppi": 73.33333333333333,
+      "final_rank": 3,
+      "rank_reason": "Placed after Apex Systems: lower PPI."
+    },
+    {
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "name": "Technical Capability",
+          "description": "Architecture, integrations, scalability and technical fit",
+          "weight": 30.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 6.0,
+          "evidence": "A configurable web portal will connect to the ERP using CSV imports. Real-time synchronization and load-test results are not included.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated technical capability strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": -3.0,
+          "relative_percent": 66.66666666666667
+        },
+        {
+          "criterion_id": 2,
+          "name": "Implementation Plan",
+          "description": "Timeline, milestones, staffing and risk plan",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 7.0,
+          "evidence": "Delivery is planned in 8 weeks with configuration in weeks 1-3, import scripts in weeks 4-5 and testing in weeks 6-8. Two developers share testing duties; no contingency reserve is budgeted.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated implementation plan strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": -2.0,
+          "relative_percent": 77.77777777777777
+        },
+        {
+          "criterion_id": 3,
+          "name": "Commercial Value",
+          "description": "Pricing clarity, total cost and assumptions",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 9.0,
+          "evidence": "BrightPath Tech proposes delivery in 8 weeks at a fixed implementation price of INR 11,00,000.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated commercial value strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": 0.0,
+          "relative_percent": 100.0
+        },
+        {
+          "criterion_id": 4,
+          "name": "Security & Compliance",
+          "description": "Controls, certifications, privacy and auditability",
+          "weight": 20.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 3.0,
+          "evidence": "HTTPS and password authentication are proposed. Data residency, backup recovery tests, access review frequency and independent compliance evidence are not specified.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated security & compliance strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": -6.0,
+          "relative_percent": 33.333333333333336
+        },
+        {
+          "criterion_id": 5,
+          "name": "Support & Experience",
+          "description": "Support model, similar projects and references",
+          "weight": 10.0,
+          "max_score": 10.0,
+          "is_active": 1,
+          "score": 4.0,
+          "evidence": "Email support is available on business days with a next-day response target. The team has one small fictional implementation and no independently verified enterprise references.",
+          "evidence_verified": true,
+          "justification": "Illustrative score based on the stated support & experience strengths and limitations. Review the quoted evidence.",
+          "benchmark": 9.0,
+          "gap": -5.0,
+          "relative_percent": 44.44444444444444
+        }
+      ],
+      "warnings": [],
+      "risks": [
+        "Fictional claims; not independently verified.",
+        "Cloud usage and post-year-one support add uncertain cost."
+      ],
+      "overall_summary": "Fixed classroom demonstration scorecard for BrightPath Tech; not generated by an LLM.",
+      "supplier_name": "BrightPath Tech",
+      "submission_date": "2026-10-21",
+      "experience_rating": 3,
+      "document_sha256": "e8c6fb741c75a715198497f9da2e308ec1aa11591adec32786f2ef152fc2690a",
+      "extracted_text": "[Page 1]\nBrightPath Tech | Synthetic RFP response\nPage 1\n BrightPath Tech\nFictional supplier proposal | RFP-2026-PORTAL\nSYNTHETIC CLASSROOM DATA - All organizations, projects, contacts and claims in this proposal are invented.\n1. Executive summary and requirement\nThe buyer seeks a cloud supplier-onboarding and procurement portal for 500 staff. The common scope is\napproval workflows, ERP connectivity, SSO, reporting, data migration and administrator training. Each bidder\nmust describe capacity, delivery, total costs and operational support.\nBrightPath Tech proposes delivery in 8 weeks at a fixed implementation price of INR 11,00,000. The following\nsections state our offered scope and limitations.\n2. Proposed solution\nA configurable web portal will connect to the ERP using CSV imports. Real-time synchronization and load-test\nresults are not included.\nThe base scope covers supplier registration, approval routing, purchase-request tracking and a reporting\ndashboard. Buyer staff supply clean master data and approve requirements. New third-party licensing is\nexcluded unless explicitly priced.\n\n\n[Page 2]\nBrightPath Tech | Synthetic RFP response\nPage 2\n3. Delivery, team and milestones\nDelivery is planned in 8 weeks with configuration in weeks 1-3, import scripts in weeks 4-5 and testing in weeks\n6-8. Two developers share testing duties; no contingency reserve is budgeted.\nThe buyer must provide an ERP sandbox, an identity-provider test account and a product owner. Scope changes\nrequire a written estimate and approval. Acceptance requires successful user journeys and resolution of critical\ndefects.\n4. Commercial proposal\nItem\nOffer\nImplementation (fixed)\nINR 11,00,000\nDelivery schedule\n8 weeks\nFirst-year support\nIncluded in fixed price\nTax\nGST excluded\nCloud hosting\nBuyer account; usage billed separately\nPayment milestones\n30% kickoff / 40% build / 30% acceptance\nAssumptions: one ERP instance, English interface and one data migration are included. Travel, custom mobile\napps and ongoing cloud consumption are excluded. Renewal pricing after year one is subject to a new quote; this\nis a total-cost uncertainty.\n\n\n[Page 3]\nBrightPath Tech | Synthetic RFP response\nPage 3\n5. Security, compliance and risk\nHTTPS and password authentication are proposed. Data residency, backup recovery tests, access review\nfrequency and independent compliance evidence are not specified.\nAll claims are illustrative. The buyer should validate security evidence before any real procurement. Key shared\nrisks include delayed sandbox access, poor source data and unapproved scope changes. The supplier will\nrecord issues and escalate unresolved dependencies to the buyer sponsor.\n6. Support, experience and references\nEmail support is available on business days with a next-day response target. The team has one small fictional\nimplementation and no independently verified enterprise references.\nFictional reference directory: Cedar Training Cooperative, Mira Shah, reference@cedar.example; Blue Lake\nServices, Arun Das, reference@bluelake.example. These are invented classroom contacts and must not be\ncontacted. Reference availability and comparability should be assessed from the stated project history.\n7. Scope boundaries and confirmation\nThis document is a teaching artifact and is not a contractual offer. Unsupported items should receive\nconservative evaluation. The evaluation must use only this proposal and the active rubric; no external reputation\nor unstated capabilities should be assumed.\n",
+      "raw_model_output": {
+        "supplier_name": "BrightPath Tech",
+        "criteria": [
+          {
+            "criterion_id": 1,
+            "score": 6,
+            "max_score": 10,
+            "evidence": "A configurable web portal will connect to the ERP using CSV imports. Real-time synchronization and load-test results are not included.",
+            "justification": "Illustrative score based on the stated technical capability strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 2,
+            "score": 7,
+            "max_score": 10,
+            "evidence": "Delivery is planned in 8 weeks with configuration in weeks 1-3, import scripts in weeks 4-5 and testing in weeks 6-8. Two developers share testing duties; no contingency reserve is budgeted.",
+            "justification": "Illustrative score based on the stated implementation plan strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 3,
+            "score": 9,
+            "max_score": 10,
+            "evidence": "BrightPath Tech proposes delivery in 8 weeks at a fixed implementation price of INR 11,00,000.",
+            "justification": "Illustrative score based on the stated commercial value strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 4,
+            "score": 3,
+            "max_score": 10,
+            "evidence": "HTTPS and password authentication are proposed. Data residency, backup recovery tests, access review frequency and independent compliance evidence are not specified.",
+            "justification": "Illustrative score based on the stated security & compliance strengths and limitations. Review the quoted evidence."
+          },
+          {
+            "criterion_id": 5,
+            "score": 4,
+            "max_score": 10,
+            "evidence": "Email support is available on business days with a next-day response target. The team has one small fictional implementation and no independently verified enterprise references.",
+            "justification": "Illustrative score based on the stated support & experience strengths and limitations. Review the quoted evidence."
+          }
+        ],
+        "risks": [
+          "Fictional claims; not independently verified.",
+          "Cloud usage and post-year-one support add uncertain cost."
+        ],
+        "overall_summary": "Fixed classroom demonstration scorecard for BrightPath Tech; not generated by an LLM."
+      },
+      "absolute_score": 60.0,
+      "ppi": 66.66666666666667,
+      "final_rank": 4,
+      "rank_reason": "Placed after Orbit Digital: lower PPI."
+    }
+  ],
+  "rules": {
+    "zero_benchmark_relative_percent": 0,
+    "experience_scale": "0-10",
+    "tie_break": "PPI descending (12 decimals), submission date ascending, experience descending, name case-insensitive ascending",
+    "evidence": "Unmatched or missing quote forces score to zero; human review still required."
+  }
+}

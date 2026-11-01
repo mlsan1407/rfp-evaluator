@@ -1,0 +1,79 @@
+{
+  "criteria": [
+    {
+      "criterion_id": 1,
+      "name": "Technical Capability",
+      "description": "Architecture, integrations, scalability and technical fit",
+      "weight": 30.0,
+      "max_score": 10.0,
+      "is_active": 1,
+      "score": 0.0,
+      "evidence": "",
+      "evidence_verified": false,
+      "justification": "No justification supplied."
+    },
+    {
+      "criterion_id": 2,
+      "name": "Implementation Plan",
+      "description": "Timeline, milestones, staffing and risk plan",
+      "weight": 20.0,
+      "max_score": 10.0,
+      "is_active": 1,
+      "score": 0.0,
+      "evidence": "",
+      "evidence_verified": false,
+      "justification": "No justification supplied."
+    },
+    {
+      "criterion_id": 3,
+      "name": "Commercial Value",
+      "description": "Pricing clarity, total cost and assumptions",
+      "weight": 20.0,
+      "max_score": 10.0,
+      "is_active": 1,
+      "score": 0.0,
+      "evidence": "",
+      "evidence_verified": false,
+      "justification": "No justification supplied."
+    },
+    {
+      "criterion_id": 4,
+      "name": "Security & Compliance",
+      "description": "Controls, certifications, privacy and auditability",
+      "weight": 20.0,
+      "max_score": 10.0,
+      "is_active": 1,
+      "score": 0.0,
+      "evidence": "",
+      "evidence_verified": false,
+      "justification": "No justification supplied."
+    },
+    {
+      "criterion_id": 5,
+      "name": "Support & Experience",
+      "description": "Support model, similar projects and references",
+      "weight": 10.0,
+      "max_score": 10.0,
+      "is_active": 1,
+      "score": 0.0,
+      "evidence": "",
+      "evidence_verified": false,
+      "justification": "No justification supplied."
+    }
+  ],
+  "warnings": [
+    "Malformed JSON: all criteria defaulted to zero.",
+    "Technical Capability: missing; assigned zero.",
+    "Technical Capability: justification missing.",
+    "Implementation Plan: missing; assigned zero.",
+    "Implementation Plan: justification missing.",
+    "Commercial Value: missing; assigned zero.",
+    "Commercial Value: justification missing.",
+    "Security & Compliance: missing; assigned zero.",
+    "Security & Compliance: justification missing.",
+    "Support & Experience: missing; assigned zero.",
+    "Support & Experience: justification missing."
+  ],
+  "risks": [],
+  "overall_summary": ""
+}
