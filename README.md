@@ -81,7 +81,7 @@ For a short demonstration: show active weights, run the four samples in Demo mod
 
 ## 5. Deploy to Streamlit Community Cloud
 
-Deployment is a remaining user account step; no public URL has been created.
+The application is deployed on Streamlit Community Cloud; the public link is provided below.
 
 1. Create a GitHub repository containing this folder's source, requirements and samples. Exclude `.venv`, API keys and generated databases using `.gitignore`.
 2. At Streamlit Community Cloud, create an app connected to that repository and set the entry file to `app.py` (or its repository-relative path).
@@ -92,3 +92,26 @@ Deployment is a remaining user account step; no public URL has been created.
 SQLite on a hosted instance is a local classroom store, not durable shared production storage. Download important run JSON before restarts/redeployments. This demo has no login or per-user database isolation: a hosted visitor can see saved run history and edit criteria. Use only fictional data, and use per-session API keys or add authentication before sharing an owner-funded live API key publicly.
 
 Official references: [OpenAI JSON outputs](https://developers.openai.com/api/docs/guides/structured-outputs?api-mode=chat), [Streamlit secrets](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/secrets-management), [Streamlit deployment](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy).
+
+## Live application
+
+[Open the RFP Evaluation App](https://rfp-evaluator-p8dm7rylrr9mtmzhbpxsfa.streamlit.app/)
+
+## Application screenshots
+
+### Evaluation criteria
+![Evaluation criteria](Screenshots/criteria.png)
+
+### OpenAI leaderboard
+![OpenAI leaderboard](Screenshots/leaderboard.png)
+
+### Detailed supplier scorecard
+![Supplier scorecard](Screenshots/scorecard.png)
+
+### Validation error
+![Invalid weights rejected](Screenshots/validation-error.png)
+
+## Completed OpenAI evaluation
+
+A complete live AI evaluation result is available in
+[Download the completed OpenAI run](<openai run output.json>)
