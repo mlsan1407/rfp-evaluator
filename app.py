@@ -13,16 +13,15 @@ st.caption('Evidence-backed supplier scorecards. Transparent Python scoring and 
 
 with st.sidebar:
     st.header('Evaluation settings')
-    mode = st.radio('Evaluator', ['Demo', 'OpenAI'])
+    st.caption('Evaluator: OpenAI')
     secret_key = os.environ.get('OPENAI_API_KEY', '')
     try:
         secret_key = st.secrets.get('OPENAI_API_KEY', secret_key)
     except (FileNotFoundError, st.errors.StreamlitSecretNotFoundError):
         pass
-    api_key = st.text_input('OpenAI API key', value=secret_key, type='password') if mode == 'OpenAI' else ''
-    model = st.text_input('JSON-capable OpenAI model ID', value=os.environ.get('OPENAI_MODEL', 'gpt-4o-mini')) if mode == 'OpenAI' else ''
+    api_key = st.text_input('OpenAI API key', value=secret_key, type='password')
+    model = st.text_input('JSON-capable OpenAI model ID', value=os.environ.get('OPENAI_MODEL', 'gpt-4o-mini'))
     st.caption('The key stays in this session and is never written to the database. Live mode sends extracted proposal text to OpenAI.')
-    st.info('Demo uses fixed illustrative scores, not AI evaluation. Use the provided sample PDFs unchanged.')
 
 criteria_tab, evaluate_tab, results_tab, learn_tab = st.tabs(['1 · Criteria', '2 · Suppliers', '3 · Results', 'How it works'])
 with criteria_tab:
@@ -62,21 +61,21 @@ with evaluate_tab:
     if st.button('Evaluate suppliers', type='primary', disabled=not inputs):
         try:
             with st.spinner('Extracting, evaluating, validating and ranking...'):
-                st.session_state['run'] = run_batch(inputs, mode, api_key, model)
+                st.session_state['run'] = run_batch(inputs, 'OpenAI', api_key, model)
             st.success('Run saved. Open the Results tab to review the leaderboard and evidence.')
         except Exception as exc:
             st.error(str(exc) if isinstance(exc, ValueError) else 'Evaluation failed. No partial leaderboard was saved. Check your setup and retry.')
 
 with results_tab:
-    runs = list_runs()
+    runs = [r for r in list_runs() if load_run(r['rfp_run_id']).get('mode') == 'OpenAI']
     selection = st.selectbox('Previously saved run', ['Current session'] + [r['rfp_run_id'] for r in runs])
     run = st.session_state.get('run') if selection == 'Current session' else load_run(selection)
+    if run and run.get('mode') != 'OpenAI':
+        run = None
     if not run:
         st.info('Evaluate suppliers to create a leaderboard.')
     else:
         st.caption(f'RFP_RUN_ID: {run["rfp_run_id"]} | {run["mode"]} | {run["created_at"]}')
-        if run['mode'] == 'Demo':
-            st.warning('Illustrative demo scores. This run did not call an LLM.')
         fields = ['final_rank', 'supplier_name', 'absolute_score', 'ppi', 'submission_date', 'experience_rating']
         st.dataframe([{k: round(s[k], 2) if isinstance(s[k], float) else s[k] for k in fields} for s in run['suppliers']], hide_index=True)
         st.caption('PPI is relative to this batch. Absolute score measures performance against the maximum score. Both use a 0–100 scale.')
@@ -98,7 +97,7 @@ with results_tab:
 with learn_tab:
     st.markdown('''1. **Load criteria:** SQLite supplies the active weights and scoring rubric.
 2. **Extract text:** pypdf reads every page; scans without text are rejected.
-3. **Evaluate:** OpenAI returns criterion scores, exact evidence quotes, and explanations. Demo mode uses fixed sample scorecards.
+3. **Evaluate:** OpenAI returns criterion scores, exact evidence quotes, and explanations for each proposal.
 4. **Validate:** Python fills missing criteria with zero, clips out-of-range scores, rejects non-finite values, and checks quoted evidence against the document.
 5. **Score:** Absolute score = sum(score / maximum × weight).
 6. **Benchmark:** Each criterion uses the highest supplier score. Gap = score − benchmark. Relative % = score / benchmark × 100; a zero benchmark gives 0%.
